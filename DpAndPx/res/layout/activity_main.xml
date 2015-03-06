@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_density"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取手机的density" />
+
+    <TextView
+        android:id="@+id/tv_scaledDensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取手机的scaledDensity" />
+
+    <TextView
+        android:id="@+id/tv_densityDpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取手机的densityDpi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_width_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机宽: " />
+
+        <TextView
+            android:id="@+id/tv_width_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="手机宽: " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_height_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机高px" />
+
+        <TextView
+            android:id="@+id/tv_height_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="手机高px" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_input_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="请输入数字"
+        android:inputType="numberDecimal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_input_value_density"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:hint="请输入手机density"
+            android:inputType="numberDecimal" />
+        
+        <ImageView 
+            android:id="@+id/iv_sel"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_normal"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="默认为当前手机density" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/but_get_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取dp" />
+
+        <TextView
+            android:id="@+id/tv_show_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/but_get_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取px" />
+
+        <TextView
+            android:id="@+id/tv_show_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+</LinearLayout>
